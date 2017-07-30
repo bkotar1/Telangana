@@ -1,3 +1,54 @@
 {
-    "extends": "google"
+  "parser"  : "babel-eslint",
+  "plugins": [
+    "import",
+    "flowtype",
+    "react",
+    "prettier"
+  ],
+  "extends" : [
+    "google",
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "globals": {
+    "after": false,
+    "afterEach": false,
+    "before": false,
+    "beforeEach": false,
+    "describe": false,
+    "it": false,
+    "require": false
+  },
+  "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\\.json$"
+    ],
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".json"
+      ]
+    }
+  }
 }

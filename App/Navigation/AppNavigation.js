@@ -1,8 +1,8 @@
-import { StackNavigator } from 'react-navigation'
-import LaunchScreen from '../Containers/LaunchScreen'
-import TelanagaDataScreen from '../Containers/TelanaganDataScreen'
+import { StackNavigator } from "react-navigation";
+import LaunchScreen from "../Containers/LaunchScreen";
+import TelanagaDataScreen from "../Containers/TelanaganDataScreen";
 
-import styles from './Styles/NavigationStyles'
+import styles from "./Styles/NavigationStyles";
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator(
@@ -12,12 +12,12 @@ const PrimaryNav = StackNavigator(
   },
   {
     // Default config for all screens
-    headerMode: 'none',
-    initialRouteName: 'TelanagaDataScreen',
+    headerMode: "none",
+    initialRouteName: "TelanagaDataScreen",
     navigationOptions: {
       headerStyle: styles.header
     }
   }
-)
+);
 
-export default PrimaryNav
+export default PrimaryNav;
