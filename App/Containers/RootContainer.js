@@ -5,6 +5,7 @@ import ReduxNavigation from "../Navigation/ReduxNavigation";
 import { connect } from "react-redux";
 import StartupActions from "../Redux/StartupRedux";
 import ReduxPersist from "../Config/ReduxPersist";
+import styles from "../Containers/Styles/RootContainerStyles";
 
 // you can set your style right here, it'll be propagated to application
 const uiTheme = {
@@ -28,17 +29,19 @@ class RootContainer extends Component {
 
   render() {
     return (
-      /** 
-      <View style={styles.applicationView}>
-        <StatusBar barStyle="light-content" />
+      
+      <View style={{ flex: 1 }}>
+      
         <ReduxNavigation />
       </View>
 
-      */
+      
 
+      /** 
       <ThemeProvider uiTheme={uiTheme}>
         <ReduxNavigation />
       </ThemeProvider>
+      */
     );
   }
 }
