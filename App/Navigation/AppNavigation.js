@@ -1,6 +1,6 @@
 import { StackNavigator } from "react-navigation";
 import LaunchScreen from "../Containers/LaunchScreen";
-import TelanagaDataScreen from "../Containers/TelanaganDataScreen";
+import TelanganaDataScreen from "../Containers/TelanganaDataScreen";
 
 import styles from "./Styles/NavigationStyles";
 
@@ -8,12 +8,12 @@ import styles from "./Styles/NavigationStyles";
 const PrimaryNav = StackNavigator(
   {
     LaunchScreen: { screen: LaunchScreen },
-    TelanagaDataScreen: { screen: TelanagaDataScreen }
+    TelanganaDataScreen: { screen: TelanganaDataScreen }
   },
   {
     // Default config for all screens
     headerMode: "none",
-    initialRouteName: "TelanagaDataScreen",
+    initialRouteName: "TelanganaDataScreen",
     navigationOptions: {
       headerStyle: styles.header
     }
