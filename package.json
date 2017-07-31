@@ -27,7 +27,9 @@
     "fixcode": "standard --fix"
   },
   "rnpm": {
-    "assets": ["./App/assests/fonts"]
+    "assets": [
+      "./App/assests/fonts"
+    ]
   },
   "dependencies": {
     "apisauce": "^0.14.0",
@@ -90,9 +92,17 @@
     "standard": "10.0.2"
   },
   "jest": {
-    "testMatch": ["**/Tests/**/*.js", "**/?(*.)(spec|test).js?(x)"],
-    "testPathIgnorePatterns": ["/node_modules/", "Tests/Setup.js"],
-    "setupFiles": ["./Tests/Setup"],
+    "testMatch": [
+      "**/Tests/**/*.js",
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "Tests/Setup.js"
+    ],
+    "setupFiles": [
+      "./Tests/Setup"
+    ],
     "preset": "react-native"
   },
   "config": {},
@@ -112,6 +122,9 @@
     ]
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "git add"]
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
