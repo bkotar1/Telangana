@@ -30,18 +30,19 @@ class RootContainer extends Component {
   render() {
     return (
       
-      <View style={{ flex: 1 }}>
+      /** 
+      <View style={{ flex: 1,alignItems:'center',justifyContent:'center',backgroundColor:'#ecf0f1' }}>
       
         <ReduxNavigation />
       </View>
-
+      */
       
 
-      /** 
+      
       <ThemeProvider uiTheme={uiTheme}>
         <ReduxNavigation />
       </ThemeProvider>
-      */
+    
     );
   }
 }

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Dimensions } from "react-native";
-import SVGImage from "react-native-svg-image";
+import { Text, View, StyleSheet, Dimensions,WebView } from "react-native";
+import SVGImage from "../Components/SVGImage";
 import { Card } from "react-native-material-ui";
 
-const { width, height } = Dimensions.get("window");
+
 
 export default class IndiaMapScreen extends Component {
   showArea() {
@@ -12,42 +12,12 @@ export default class IndiaMapScreen extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1}}>
-        <SVGImage
-          style={{
-            width: 300,
-            height: 200
-          }}
-          source={{
-            uri:
-              "../Images/car.svg"
-          }}
+      <View style={{flex: 1,alignItems:'center',justifyContent:'center',backgroundColor:'red'}}>
+        <WebView
+          style={{width:100,height:100,justifyContent:'center',alignItems:'center'}}
+          source={require('./helloworld.html')}
         />
       </View>
-
-      /** 
-      <View style={{flex: 1}}>
-        <View style={{flex: 1, backgroundColor: 'powderblue'}} />
-        <View style={{flex: 2, backgroundColor: 'skyblue'}} />
-        <View style={{flex: 3, backgroundColor: 'steelblue'}} >
-          <SVGImage width="24" viewBox="0 0 24 23"
-          source={{
-            uri: "../Images/Telangana.svg"
-          }}
-          />
-          </View>
-      </View>
-      */
-      /** 
-      <View style={{flex: 4}}>
-        <SVGImage
-          style={{ flex: 2, width: 200, height: 100 }}
-          source={{
-            uri: "../Images/Telangana.svg"
-          }}
-        />
-      </View>
-      */
     );
   }
 }
