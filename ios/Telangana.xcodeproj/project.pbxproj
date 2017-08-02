@@ -66,6 +66,7 @@
 		645B789C9A0642B6A7D605DD /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 775477A56E7647A2B1FD86C1 /* Roboto-ThinItalic.ttf */; };
 		10997CD2EFB44F59A5A93594 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC3EA28AEC4C4F45B40BA0B9 /* LICENSE.txt */; };
 		9F24E4F302104C169D514409 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 496DF107613A4319B80683D0 /* libRNSVG.a */; };
+		E27B6589586C4493975F58DB /* libReact-Native-Webview-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB923DA229E46D6ABBABC52 /* libReact-Native-Webview-Bridge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -321,6 +322,8 @@
 		CC3EA28AEC4C4F45B40BA0B9 /* LICENSE.txt */ = {isa = PBXFileReference; name = "LICENSE.txt"; path = "../App/assests/fonts/Roboto/LICENSE.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		18B6C519598545B083CE41EF /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		496DF107613A4319B80683D0 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7A9CABD8EB7149AC9EC69EE1 /* React-Native-Webview-Bridge.xcodeproj */ = {isa = PBXFileReference; name = "React-Native-Webview-Bridge.xcodeproj"; path = "../node_modules/react-native-webview-bridge/ios/React-Native-Webview-Bridge.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		2DB923DA229E46D6ABBABC52 /* libReact-Native-Webview-Bridge.a */ = {isa = PBXFileReference; name = "libReact-Native-Webview-Bridge.a"; path = "libReact-Native-Webview-Bridge.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +358,7 @@
 				FE894C9B303745889D4B095E /* libReactNativeConfig.a in Frameworks */,
 				8CE202672E51418DBBD2BCAB /* libRNDeviceInfo.a in Frameworks */,
 				9F24E4F302104C169D514409 /* libRNSVG.a in Frameworks */,
+				E27B6589586C4493975F58DB /* libReact-Native-Webview-Bridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +530,7 @@
 				D9512E109E4E43B495CAD204 /* ReactNativeConfig.xcodeproj */,
 				9CDA907062224D60A8CD4106 /* RNDeviceInfo.xcodeproj */,
 				18B6C519598545B083CE41EF /* RNSVG.xcodeproj */,
+				7A9CABD8EB7149AC9EC69EE1 /* React-Native-Webview-Bridge.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1117,6 +1122,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios",
 				);
 			};
 			name = Debug;
@@ -1146,6 +1152,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios",
 				);
 			};
 			name = Release;
@@ -1172,6 +1179,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios",
 				);
 			};
 			name = Debug;
@@ -1197,6 +1205,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios",
 				);
 			};
 			name = Release;
@@ -1235,6 +1244,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios",
 				);
 			};
 			name = Debug;
@@ -1273,6 +1283,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios",
 				);
 			};
 			name = Release;
