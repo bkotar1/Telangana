@@ -5,7 +5,7 @@ import { Card } from "react-native-material-ui";
 
 
 
-export default class IndiaMapScreen extends Component {
+export default class TelanganaMapScreen extends Component {
   showArea() {
     alert("clickable");
   }
@@ -14,8 +14,8 @@ export default class IndiaMapScreen extends Component {
     return (
       <View style={{flex: 1,alignItems:'center',justifyContent:'center',backgroundColor:'red'}}>
         <WebView
-          style={{width:100,height:100,justifyContent:'center',alignItems:'center'}}
-          source={require('./helloworld.html')}
+          style={{width:600,height:600,justifyContent:'center',alignItems:'center'}}
+          source={require('./TelanganaMapSvg.html')}
         />
       </View>
     );
